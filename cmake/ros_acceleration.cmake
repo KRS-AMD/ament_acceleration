@@ -10,7 +10,6 @@
 #
 # set the ROS_ACCELERATION variable
 
-# TODO: move this definition to ament_acceleration
 if(NOT DEFINED ROS_ACCELERATION)
   set(ROS_ACCELERATION TRUE)
 endif()
