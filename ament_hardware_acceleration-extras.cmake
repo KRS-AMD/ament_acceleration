@@ -16,5 +16,5 @@ find_package(ament_cmake_core QUIET REQUIRED)
 foreach(filename
   "ros_acceleration"
 )
-  include(${ament_acceleration_DIR}/${filename}.cmake)
+  include(${ament_hardware_acceleration_DIR}/${filename}.cmake)
 endforeach()

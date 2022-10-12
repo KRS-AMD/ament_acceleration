@@ -1,6 +1,10 @@
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Changelog for package ament_acceleration
+Changelog for package ament_hardware_acceleration
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+0.3.0 (2022-10-12)
+------------------
+* Rename to ament_hardware_acceleration
 
 0.2.0 (2022-03-23)
 ------------------

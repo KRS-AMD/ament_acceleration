@@ -1,11 +1,11 @@
 cmake_minimum_required(VERSION 3.5)
 
-project(ament_acceleration NONE)
+project(ament_hardware_acceleration NONE)
 
 find_package(ament_cmake_core REQUIRED)
 
 ament_package(
-  CONFIG_EXTRAS "ament_acceleration-extras.cmake"
+  CONFIG_EXTRAS "ament_hardware_acceleration-extras.cmake"
 )
 
 install(

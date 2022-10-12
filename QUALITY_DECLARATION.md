@@ -1,8 +1,8 @@
-This document is a declaration of software quality for the `ament_acceleration` package, based on the guidelines in [REP-2004](https://www.ros.org/reps/rep-2004.html).
+This document is a declaration of software quality for the `ament_hardware_acceleration` package, based on the guidelines in [REP-2004](https://www.ros.org/reps/rep-2004.html).
 
-# `ament_acceleration` Quality Declaration
+# `ament_hardware_acceleration` Quality Declaration
 
-The package `ament_acceleration` claims to be in the **Quality Level 4** category when it is used with a **Quality Level 4** middleware.
+The package `ament_hardware_acceleration` claims to be in the **Quality Level 4** category when it is used with a **Quality Level 4** middleware.
 
 Below are the rationales, notes, and caveats for this claim, organized by each requirement listed in the [Package Quality Categories in REP-2004](https://www.ros.org/reps/rep-2004.html).
 
@@ -10,12 +10,12 @@ Below are the rationales, notes, and caveats for this claim, organized by each r
 
 ### Version Scheme [1.i]
 
-`ament_acceleration` uses `semver` according to the recommendation for ROS Core packages in the [ROS 2 Developer Guide](https://docs.ros.org/en/rolling/Contributing/Developer-Guide.html#versioning).
+`ament_hardware_acceleration` uses `semver` according to the recommendation for ROS Core packages in the [ROS 2 Developer Guide](https://docs.ros.org/en/rolling/Contributing/Developer-Guide.html#versioning).
 
 <!--
 ### Version Stability [1.ii]
 
-`ament_acceleration` is at a stable version, i.e. `>= 1.0.0`.
+`ament_hardware_acceleration` is at a stable version, i.e. `>= 1.0.0`.
 The current version can be found in its [package.xml](package.xml), and its change history can be found in its [CHANGELOG](CHANGELOG.rst).
 
 ### Public API Declaration [1.iii]
@@ -26,16 +26,16 @@ All installed headers are in the `include` directory of the package, headers in 
 
 ### API Stability Within a Released ROS Distribution [1.iv]/[1.vi]
 
-`ament_acceleration` will not break public API within a released ROS distribution, i.e. no major releases once the ROS distribution is released.
+`ament_hardware_acceleration` will not break public API within a released ROS distribution, i.e. no major releases once the ROS distribution is released.
 
 ### ABI Stability Within a Released ROS Distribution [1.v]/[1.vi]
 
-`ament_acceleration` contains C and C++ code and therefore must be concerned with ABI stability, and will maintain ABI stability within a ROS distribution.
+`ament_hardware_acceleration` contains C and C++ code and therefore must be concerned with ABI stability, and will maintain ABI stability within a ROS distribution.
 -->
 
 ## Change Control Process [2]
 
-`ament_acceleration` follows the recommended guidelines for ROS Core packages in the [ROS 2 Developer Guide](https://docs.ros.org/en/rolling/Contributing/Developer-Guide.html#quality-practices).
+`ament_hardware_acceleration` follows the recommended guidelines for ROS Core packages in the [ROS 2 Developer Guide](https://docs.ros.org/en/rolling/Contributing/Developer-Guide.html#quality-practices).
 
 ### Change Requests [2.i]
 
@@ -66,35 +66,35 @@ All pull requests must resolve related documentation changes before merging.
 <!--
 ### Feature Documentation [3.i]
 
-`ament_acceleration` has feature documentation describing lifecycle nodes.
+`ament_hardware_acceleration` has feature documentation describing lifecycle nodes.
 It is [hosted](https://design.ros2.org/articles/node_lifecycle.html).
 -->
 
 <!--
 ### Public API Documentation [3.ii]
 
-Most of `ament_acceleration` has embedded API documentation.
+Most of `ament_hardware_acceleration` has embedded API documentation.
 -->
 
 ### License [3.iii]
 
-The license for `ament_acceleration` is Apache 2.0, and a summary is in each source file, the type is declared in the [package.xml](package.xml) manifest file, and a full copy of the license is in the [LICENSE](LICENSE) file.
+The license for `ament_hardware_acceleration` is Apache 2.0, and a summary is in each source file, the type is declared in the [package.xml](package.xml) manifest file, and a full copy of the license is in the [LICENSE](LICENSE) file.
 
 
 <!--
 There is an automated test which runs a linter that ensures each file has a license statement.
 
-The most recent test results can be found [here](https://ci.ros2.org/view/nightly/job/nightly_linux_release/lastBuild/testReport/ament_acceleration/copyright/).
+The most recent test results can be found [here](https://ci.ros2.org/view/nightly/job/nightly_linux_release/lastBuild/testReport/ament_hardware_acceleration/copyright/).
 -->
 
 ### Copyright Statements [3.iv]
 
-The copyright holders each provide a statement of copyright in each source code file in `ament_acceleration`.
+The copyright holders each provide a statement of copyright in each source code file in `ament_hardware_acceleration`.
 
 <!--
 There is an automated test which runs a linter that ensures each file has at least one copyright statement.
 
-The results of the test can be found [here](https://ci.ros2.org/view/nightly/job/nightly_linux_release/lastBuild/testReport/ament_acceleration/copyright/).
+The results of the test can be found [here](https://ci.ros2.org/view/nightly/job/nightly_linux_release/lastBuild/testReport/ament_hardware_acceleration/copyright/).
 -->
 
 
@@ -103,14 +103,14 @@ The results of the test can be found [here](https://ci.ros2.org/view/nightly/job
 <!--
 ### Feature Testing [4.i]
 
-`ament_acceleration` has feature tests, which test for proper node state transitions.
+`ament_hardware_acceleration` has feature tests, which test for proper node state transitions.
 The tests are located in the [test](test) subdirectory.
 New features are required to have tests before being added.
 Currently nightly test results can be seen here:
-* [linux-aarch64_release](https://ci.ros2.org/view/nightly/job/nightly_linux-aarch64_release/lastBuild/testReport/ament_acceleration/)
-* [linux_release](https://ci.ros2.org/view/nightly/job/nightly_linux_release/lastBuild/testReport/ament_acceleration/)
-* [mac_osx_release](https://ci.ros2.org/view/nightly/job/nightly_osx_release/lastBuild/testReport/ament_acceleration/)
-* [windows_release](https://ci.ros2.org/view/nightly/job/nightly_win_rel/lastBuild/testReport/ament_acceleration/)
+* [linux-aarch64_release](https://ci.ros2.org/view/nightly/job/nightly_linux-aarch64_release/lastBuild/testReport/ament_hardware_acceleration/)
+* [linux_release](https://ci.ros2.org/view/nightly/job/nightly_linux_release/lastBuild/testReport/ament_hardware_acceleration/)
+* [mac_osx_release](https://ci.ros2.org/view/nightly/job/nightly_osx_release/lastBuild/testReport/ament_hardware_acceleration/)
+* [windows_release](https://ci.ros2.org/view/nightly/job/nightly_win_rel/lastBuild/testReport/ament_hardware_acceleration/)
 
 ### Public API Testing [4.ii]
 
@@ -118,7 +118,7 @@ Each part of the public API has tests, and new additions or changes to the publi
 
 ### Coverage [4.iii]
 
-`ament_acceleration` follows the recommendations for ROS Core packages in the [ROS 2 Developer Guide](https://docs.ros.org/en/rolling/Contributing/Developer-Guide.html#code-coverage), and opts to use line coverage instead of branch coverage.
+`ament_hardware_acceleration` follows the recommendations for ROS Core packages in the [ROS 2 Developer Guide](https://docs.ros.org/en/rolling/Contributing/Developer-Guide.html#code-coverage), and opts to use line coverage instead of branch coverage.
 
 This includes:
 
@@ -127,13 +127,13 @@ This includes:
 
 Changes are required to make a best effort to keep or increase coverage before being accepted, but decreases are allowed if properly justified and accepted by reviewers.
 
-Current coverage statistics can be viewed [here](https://ci.ros2.org/job/nightly_linux_coverage/lastSuccessfulBuild/cobertura/src_ros2_rcl_ament_acceleration_src/). A description of how coverage statistics are calculated is summarized in this page ["ROS 2 Onboarding Guide"](https://docs.ros.org/en/rolling/Contributing/Developer-Guide.html#note-on-coverage-runs).
+Current coverage statistics can be viewed [here](https://ci.ros2.org/job/nightly_linux_coverage/lastSuccessfulBuild/cobertura/src_ros2_rcl_ament_hardware_acceleration_src/). A description of how coverage statistics are calculated is summarized in this page ["ROS 2 Onboarding Guide"](https://docs.ros.org/en/rolling/Contributing/Developer-Guide.html#note-on-coverage-runs).
 
 ### Performance [4.iv]
 
-`ament_acceleration` follows the recommendations for performance testing of C code in the [ROS 2 Developer Guide](https://docs.ros.org/en/rolling/Contributing/Developer-Guide.html#performance), and opts to do performance analysis on each release rather than each change.
+`ament_hardware_acceleration` follows the recommendations for performance testing of C code in the [ROS 2 Developer Guide](https://docs.ros.org/en/rolling/Contributing/Developer-Guide.html#performance), and opts to do performance analysis on each release rather than each change.
 
-System level performance benchmarks that cover features of `ament_acceleration` can be found at:
+System level performance benchmarks that cover features of `ament_hardware_acceleration` can be found at:
 * [Benchmarks](http://build.ros2.org/view/Rci/job/Rci__benchmark_ubuntu_focal_amd64/BenchmarkTable/)
 * [Performance](http://build.ros2.org/view/Rci/job/Rci__nightly-performance_ubuntu_focal_amd64/lastCompletedBuild/)
 
@@ -141,14 +141,14 @@ Changes that introduce regressions in performance must be adequately justified i
 
 ### Linters and Static Analysis [4.v]
 
-`ament_acceleration` uses and passes all the standard linters and static analysis tools for a C package as described in the [ROS 2 Developer Guide](https://docs.ros.org/en/rolling/Contributing/Developer-Guide.html#linters-and-static-analysis).
+`ament_hardware_acceleration` uses and passes all the standard linters and static analysis tools for a C package as described in the [ROS 2 Developer Guide](https://docs.ros.org/en/rolling/Contributing/Developer-Guide.html#linters-and-static-analysis).
 
-Results of the nightly linter tests can be found [here](https://ci.ros2.org/view/nightly/job/nightly_linux_release/lastBuild/testReport/ament_acceleration).
+Results of the nightly linter tests can be found [here](https://ci.ros2.org/view/nightly/job/nightly_linux_release/lastBuild/testReport/ament_hardware_acceleration).
 -->
 
 ## Dependencies [5]
 
-Below are evaluations of each of `ament_acceleration`'s run-time and build-time dependencies that have been determined to influence the quality.
+Below are evaluations of each of `ament_hardware_acceleration`'s run-time and build-time dependencies that have been determined to influence the quality.
 
 <!--
 It has several "buildtool" dependencies, which do not affect the resulting quality of the package, because they do not contribute to the public library API.
@@ -157,12 +157,12 @@ It also has several test dependencies, which do not affect the resulting quality
 
 ### Direct Runtime ROS Dependencies [5.i]/[5.ii]
 
-`ament_acceleration` does not have any runtime ROS dependencies.
+`ament_hardware_acceleration` does not have any runtime ROS dependencies.
 
 <!--
 ### Direct Runtime ROS Dependencies [5.i]/[5.ii]
 
-`ament_acceleration` has the following runtime ROS dependencies:
+`ament_hardware_acceleration` has the following runtime ROS dependencies:
 
 #### `lifecycle_msgs`
 
@@ -196,28 +196,28 @@ It is **Quality Level 1**, see its [Quality Declaration document](https://github
 
 #### `tracetools`
 
-The `tracetools` package provides utilities for instrumenting the code in `ament_acceleration` so that it may be traced for debugging and performance analysis.
+The `tracetools` package provides utilities for instrumenting the code in `ament_hardware_acceleration` so that it may be traced for debugging and performance analysis.
 
 It is **Quality Level 1**, see its [Quality Declaration document](https://gitlab.com/ros-tracing/ros2_tracing/-/blob/master/tracetools/QUALITY_DECLARATION.md).
 -->
 
 ### Direct Runtime Non-ROS Dependencies [5.iii]
 
-`ament_acceleration` does not have any direct runtime Non-ROS dependencies.
+`ament_hardware_acceleration` does not have any direct runtime Non-ROS dependencies.
 
 
 ## Platform Support [6]
 
-`ament_acceleration` claims supports only for arm64 bits in PetaLinux/OpenEmbedded and Ubuntu Focal platforms as described in [REP-2000](https://www.ros.org/reps/rep-2000.html#support-tiers).
+`ament_hardware_acceleration` claims supports only for arm64 bits in PetaLinux/OpenEmbedded and Ubuntu Focal platforms as described in [REP-2000](https://www.ros.org/reps/rep-2000.html#support-tiers).
 
 <!--
-`ament_acceleration` supports all of the tier 1 platforms as described in [REP-2000](https://www.ros.org/reps/rep-2000.html#support-tiers), and tests each change against all of them.
+`ament_hardware_acceleration` supports all of the tier 1 platforms as described in [REP-2000](https://www.ros.org/reps/rep-2000.html#support-tiers), and tests each change against all of them.
 
 Currently nightly results can be seen here:
-* [linux-aarch64_release](https://ci.ros2.org/view/nightly/job/nightly_linux-aarch64_release/lastBuild/testReport/ament_acceleration/)
-* [linux_release](https://ci.ros2.org/view/nightly/job/nightly_linux_release/lastBuild/testReport/ament_acceleration/)
-* [mac_osx_release](https://ci.ros2.org/view/nightly/job/nightly_osx_release/lastBuild/testReport/ament_acceleration/)
-* [windows_release](https://ci.ros2.org/view/nightly/job/nightly_win_rel/lastBuild/testReport/ament_acceleration/)
+* [linux-aarch64_release](https://ci.ros2.org/view/nightly/job/nightly_linux-aarch64_release/lastBuild/testReport/ament_hardware_acceleration/)
+* [linux_release](https://ci.ros2.org/view/nightly/job/nightly_linux_release/lastBuild/testReport/ament_hardware_acceleration/)
+* [mac_osx_release](https://ci.ros2.org/view/nightly/job/nightly_osx_release/lastBuild/testReport/ament_hardware_acceleration/)
+* [windows_release](https://ci.ros2.org/view/nightly/job/nightly_win_rel/lastBuild/testReport/ament_hardware_acceleration/)
 -->
 
 # Security [7]
