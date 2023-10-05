@@ -15,6 +15,7 @@ find_package(ament_cmake_core QUIET REQUIRED)
 # various functions / macros
 foreach(filename
   "ros_acceleration"
+  "firmware_path"
 )
   include(${ament_acceleration_DIR}/${filename}.cmake)
 endforeach()
